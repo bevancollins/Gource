@@ -1,0 +1,11 @@
+install(
+  FILES
+    bloom.frag
+    bloom.vert
+    shadow.frag
+    shadow.vert
+    text.frag
+    text.vert
+  DESTINATION
+    data/shaders
+)

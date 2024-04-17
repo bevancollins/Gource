@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "gource",
+  "dependencies": [
+    "boost-assign",
+    "boost-algorithm",
+    "boost-filesystem",
+    "boost-format",
+    "freeglut",
+    "freetype",
+    "glew",
+    "glm",
+    "libpng",
+    "opengl",
+    "pcre2",
+    "sdl2-image",
+    "sdl2"
+  ]
+}
