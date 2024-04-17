@@ -15,6 +15,11 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#ifdef _WIN32
+#include <windows.h>
+#include <io.h>
+#endif
+
 #include "commitlog.h"
 #include "../gource_settings.h"
 #include "../core/sdlapp.h"

@@ -20,7 +20,9 @@
 
 #include "commitlog.h"
 
+#ifndef _WIN32
 #include <unistd.h>
+#endif
 
 extern std::string gGourceGitRawLogCommand;
 

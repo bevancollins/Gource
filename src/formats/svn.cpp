@@ -15,6 +15,11 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#ifdef _WIN32
+#include <windows.h>
+#include <direct.h>
+#endif
+
 #include "svn.h"
 #include "../gource_settings.h"
 
