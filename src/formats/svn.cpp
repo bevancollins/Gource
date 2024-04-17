@@ -24,12 +24,7 @@
 #include "../gource_settings.h"
 
 #include <boost/format.hpp>
-
-#ifdef HAVE_LIBTINYXML
 #include <tinyxml.h>
-#else
-#include "../tinyxml/tinyxml.h"
-#endif
 
 Regex svn_xml_tag("^<\\??xml");
 Regex svn_logentry_start("^<logentry");

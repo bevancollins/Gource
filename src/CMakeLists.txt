@@ -98,12 +98,6 @@ add_executable(gource
   spline.h
   textbox.cpp
   textbox.h
-  tinyxml/tinystr.cpp
-  tinyxml/tinystr.h
-  tinyxml/tinyxml.cpp
-  tinyxml/tinyxml.h
-  tinyxml/tinyxmlerror.cpp
-  tinyxml/tinyxmlparser.cpp
   user.cpp
   user.h
   zoomcamera.cpp
@@ -125,6 +119,7 @@ find_package(pcre2 CONFIG REQUIRED)
 find_package(PNG REQUIRED)
 find_package(SDL2 CONFIG REQUIRED)
 find_package(SDL2_image CONFIG REQUIRED)
+find_package(tinyxml CONFIG REQUIRED)
 
 target_link_libraries(gource PRIVATE
   $<IF:$<TARGET_EXISTS:FreeGLUT::freeglut>,FreeGLUT::freeglut,FreeGLUT::freeglut_static>
@@ -140,6 +135,7 @@ target_link_libraries(gource PRIVATE
   OpenGL::GL
   PCRE2::8BIT PCRE2::16BIT PCRE2::32BIT PCRE2::POSIX
   PNG::PNG
+  unofficial-tinyxml::unofficial-tinyxml
 )
 
 install(

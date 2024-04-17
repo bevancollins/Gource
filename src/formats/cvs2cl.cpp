@@ -17,12 +17,7 @@
 
 #include "cvs2cl.h"
 #include "../gource_settings.h"
-
-#ifdef HAVE_LIBTINYXML
 #include <tinyxml.h>
-#else
-#include "../tinyxml/tinyxml.h"
-#endif
 
 Regex cvs2cl_xml_tag("^<\\??xml");
 Regex cvs2cl_logentry_start("^<entry");
